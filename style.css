@@ -29,6 +29,46 @@ nav{
     padding-bottom: 2rem;
     position: fixed;
     width: 100%;
+    z-index: 500;
+}
+.btn-large{
+    font-size: 2rem;
+    padding: 2.2rem 1.6rem;
+
+
+}
+.btn{
+    margin-top: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: .2rem;
+    cursor: pointer;
+    transition: all .5s;
+
+
+}
+.btn-outline{
+    color: white;
+    border-color: white;
+    background-color: transparent;
+}
+.btn-outline:hover{
+    background-color: white;
+    color: #212529;
+    
+}
+.btn-primary{
+    background-color: #1abc9b;
+    border-color: #1abc9b;
+    padding: 1.2rem 1rem;
+
+}
+.btn-primary:hover{
+    background-color: #128f76;
+    border-color:#128f76;
+    color: white;
+    
 }
 .img-fluid{
     max-width: 256px;
@@ -110,9 +150,9 @@ header h1{
 
 }
 
-.star-light {
+.star-light, .star-dark {
     border: none;
-    border-top: 0.4rem solid white; 
+    border-top: 0.4rem solid ; 
     padding: 5px;
     max-width: 25rem;
     margin: 2.5rem auto;
@@ -120,16 +160,23 @@ header h1{
     
 
 }
-
 .star-light::after{
-    content: "\2605";
     color: white;
+    background-color: #1abc9b;
+}
+.star-dark::after{
+    color: #2d3d4f;
+    background-color: white;
+}
+
+.star-light::after, .star-dark::after{
+    content: "\2605";
     font-weight: 900;
     font-size: 3.2rem;
     position: relative;
     top:-32px;
     padding: 0 8px;
-    background-color: #1abc9b;
+    
 
 }
 
@@ -140,4 +187,183 @@ header h2{
     font-weight:bold;
     
 
+}
+#portfolio {
+    
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+   
+}
+section{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+#portfolio h2{
+    font-size: 4.8rem;
+    color: #2d3d4f;
+}
+
+hr .star-light{
+    border-color: white;
+}
+
+hr.star-dark{
+    border-color: #2d3d4f;
+}
+
+.col{
+    float:left;
+    width: 33%;
+    padding: 10px;
+  
+}
+
+.portfolio-item{
+    position: relative;
+}
+
+.img-fluid-p{
+    max-width: 100%;
+    height: auto;
+
+}
+
+.portfolio-item img{
+    display: block;
+    border-radius: 13px;
+}
+
+.img-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1abc9b;
+    opacity: 0;
+}
+
+.img-overlay .icon{
+    color: white;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.portfolio-item:hover .img-overlay{
+    opacity: 0.8;
+    transition: opacity 0.4s;
+    border-radius: 13px;
+}
+
+#about{
+    background-color: #1abc9b;
+    color: white;
+
+}
+#about h2{
+    font-size: 4.8rem;
+
+}
+
+#about-text {
+    text-align: left;
+
+}
+
+#about-text .left{
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+    padding-left: 23rem;
+}
+
+#about-text .right{
+    float: right;
+    width: 50%;
+    padding-right: 23rem;
+    padding-left: 2rem;
+}
+#about-text .text{
+    font-size: 2rem;
+}
+
+#contact h2{
+    font-size: 4.8rem;
+    color: #2c3e50;
+}
+
+#contact-form{
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+
+    
+}
+.form-group{
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 3rem;
+    margin-bottom: 40px;
+}
+
+.form-group input , .form-group textarea{
+    border:none;
+    width: 100%;
+    display: block;
+    font-size: 2.4rem;
+    
+}
+
+.form-group input:focus {
+    outline: 0;
+}
+.form-group textarea:focus {
+    outline: 0;
+}
+
+footer{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #2c3e4f;
+    color: white;
+    text-align: center;
+}
+
+footer h4{
+    font-size: 2.4rem;
+
+}
+
+footer p{
+    font-size: 2rem;
+    margin-top: 1rem;
+
+}
+
+.btn-social{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 2rem;
+
+}
+
+footer li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.copyright{
+    background-color: #19262f;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    color: white;
+    text-align: center;
+    
 }
