@@ -7,7 +7,7 @@
 }
 
 html{
-    font-size: 10px;
+    font-size: 6px;
 }
 body{
    font-family: "Lato",sans-serif;
@@ -19,6 +19,13 @@ body{
 }
 a{
     text-decoration: none;
+}
+#profile-image{
+    border: 2px solid #128f76 ;
+    
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
 }
 /* navbar */
 nav{
@@ -75,7 +82,7 @@ nav{
     height: auto;
 }
 .container{
-    width: 1140px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
@@ -216,8 +223,8 @@ hr.star-dark{
 
 .col{
     float:left;
-    width: 33%;
-    padding: 10px;
+    width: 100%;
+    padding: 1rem;
   
 }
 
@@ -277,17 +284,17 @@ hr.star-dark{
 }
 
 #about-text .left{
-    float: left;
-    width: 50%;
-    padding-right: 2rem;
-    padding-left: 23rem;
+    float: none;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 25px;
 }
 
 #about-text .right{
-    float: right;
-    width: 50%;
-    padding-right: 23rem;
-    padding-left: 2rem;
+    float: none;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 25px;
 }
 #about-text .text{
     font-size: 2rem;
@@ -366,4 +373,98 @@ footer li{
     color: white;
     text-align: center;
     
+}
+
+@media (min-width:576px) {
+    .container{
+        max-width: 540px;
+    }
+    
+    
+}
+
+@media (min-width:768px) {
+    .container{
+        max-width: 720px;
+    }
+    html{
+        font-size: 7px;
+    }
+    .col{
+        width: 50%;
+    }
+    
+    
+}
+
+@media (min-width:992px) {
+    .container{
+        max-width: 960px;
+    }
+    html{
+        font-size: 8px;
+    }
+    .col{
+        width: 33%;
+    }
+    
+}
+@media (min-width:1200px) {
+    
+    .container{
+        max-width: 1140px;
+    }
+    html{
+        font-size: 9px;
+    }
+
+}
+
+@media (min-width:992px){
+    #about-text .left{
+        float: left;
+        width: 50%;
+        padding-right: 10px;
+        padding-left: 210px;
+    }
+    #about-text .right{
+        float: right;
+        width: 50%;
+        padding-right: 210px;
+        padding-left: 10px;
+    }
+}
+
+#navlinks .nav-icon{
+    display: none;
+}
+
+@media (max-width:992px){
+    #logo-box{
+        float: none;
+        text-align: left;
+    }
+    #navlinks{
+        float: none;
+    }
+    #navlinks .nav-link{
+        font-size: 2rem;
+        padding-left: 0;
+    }
+    #navlinks .nav-item{
+        float: none;
+        text-align: left;
+    }
+    #navlinks .nav-icon{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 3rem;
+    }
+    #navlinks.responsive li:not(:first-child) {
+        display: none;
+
+    }
+
 }

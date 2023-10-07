@@ -35,11 +35,14 @@
     <nav>
         <div class="container clearfix">
             <div id="logo-box">
-                <a href="/" class="logo text-uppercase"> Start Bootstrap</a>
+                <a href="/" class="logo text-uppercase"> KUTAY AKPINAR</a>
             </div>
 
-            <div id="navlinks">
+            <div id="navlinks" class="responsive">
                 <ul>
+                    <li class="nav-item text-uppercase nav-icon"> <a href="#" class="nav-link"><i
+                                class="fa-solid fa-bars"></i></a></li>
+
                     <li class="nav-item text-uppercase"> <a href="#" class="nav-link">Portfolio</a></li>
                     <li class="nav-item text-uppercase"> <a href="#" class="nav-link">About</a></li>
                     <li class="nav-item text-uppercase"> <a href="#" class="nav-link">Contact</a></li>
@@ -50,8 +53,8 @@
 
     <header>
         <div class="container">
-            <img id="profile-image" class="img-fluid" src="images/avatar.png" alt="">
-            <h1 class="text-uppercase">Start Boostrap</h1>
+            <img id="profile-image" class="img-fluid" src="images/mailat.jpg" alt="">
+            <h1 class="text-uppercase">KUTAY AKPINAR</h1>
             <hr class="star-light">
             <h2>Web Developer</h2>
         </div>
@@ -134,7 +137,7 @@
 
             </div>
         </div>
-       
+
     </section>
     <section id="about">
         <h2 class="text-uppercase">
@@ -173,18 +176,18 @@
             <form id="contact-form">
                 <div class="form-group">
                     <input type="text" id="name" placeholder="Name">
-                    
+
                 </div>
                 <div class="form-group">
                     <input type="text" id="email" placeholder="E-mail">
-                    
+
                 </div>
                 <div class="form-group">
                     <input type="text" id="phone" placeholder="Phone">
-                    
+
                 </div>
                 <div class="form-group">
-                    <textarea  id="message" rows="5" placeholder="Message"></textarea>
+                    <textarea id="message" rows="5" placeholder="Message"></textarea>
                 </div>
                 <button class="btn btn-primary">
                     Send
@@ -194,7 +197,7 @@
     </section>
 
     <footer>
-        <div class="container clearfix" >
+        <div class="container clearfix">
             <div class="col">
                 <h4 class="text-uppercase">
                     Location
@@ -245,6 +248,16 @@
             <small>Copyright © Your Website 2023</small>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(".nav-icon").click(function(){
+            $("#navlinks").toggleClass("responsive");
+            return false;
+        });
+
+    </script>
 
 
 
